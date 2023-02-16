@@ -13,7 +13,7 @@ try {
   let address; // variable for storing the address of the deployed contract 
 
   // API creation for connection to the chain
-  const wsProvider = new WsProvider('wss://wss-testnet.5ire.network/');
+  const wsProvider = new WsProvider('3.128.99.18:9944');
   const api = await ApiPromise.create({ provider: wsProvider });
 
   
@@ -31,7 +31,7 @@ try {
   
   
   // adding fire account for paying the gas fee
-  const PHRASE = 'negative cheap cherry uncover absurd angle swarm armor tuna lounge hurdle lawsuit';
+  const PHRASE = 'spice cannon input large goddess emerge demand clever govern supreme over sweet';
   const seedUser = mnemonicToMiniSecret(PHRASE);
   const keyring = new Keyring({ type: "ed25519" });
   const userKeyring = keyring.addFromPair(naclKeypairFromSeed(seedUser));
